@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942D64E51F27EBEF005E0F03 /* Sci-Fi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942D64E41F27EBEF005E0F03 /* Sci-Fi.swift */; };
 		94B708581F27C9F70051E254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B708571F27C9F70051E254 /* AppDelegate.swift */; };
 		94B7085A1F27C9F70051E254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B708591F27C9F70051E254 /* ViewController.swift */; };
 		94B7085D1F27C9F70051E254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B7085B1F27C9F70051E254 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		942D64E41F27EBEF005E0F03 /* Sci-Fi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sci-Fi.swift"; sourceTree = "<group>"; };
 		94B708541F27C9F70051E254 /* pickerVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickerVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B708571F27C9F70051E254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94B708591F27C9F70051E254 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				94B708571F27C9F70051E254 /* AppDelegate.swift */,
 				94B708591F27C9F70051E254 /* ViewController.swift */,
 				94B7085B1F27C9F70051E254 /* Main.storyboard */,
+				942D64E41F27EBEF005E0F03 /* Sci-Fi.swift */,
 				94B7085E1F27C9F70051E254 /* Assets.xcassets */,
 				94B708601F27C9F70051E254 /* LaunchScreen.storyboard */,
 				94B708631F27C9F70051E254 /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B7085A1F27C9F70051E254 /* ViewController.swift in Sources */,
+				942D64E51F27EBEF005E0F03 /* Sci-Fi.swift in Sources */,
 				94B708581F27C9F70051E254 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +308,7 @@
 				94B708681F27C9F70051E254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
