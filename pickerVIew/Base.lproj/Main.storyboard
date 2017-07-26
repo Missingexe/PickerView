@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sci Fi View Controller-->
         <scene sceneID="W1n-gM-DGO">
             <objects>
-                <viewController id="PSd-Qv-z1B" sceneMemberID="viewController">
+                <viewController id="PSd-Qv-z1B" customClass="SciFiViewController" customModule="pickerVIew" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6gZ-lS-gxU"/>
                         <viewControllerLayoutGuide type="bottom" id="mvj-gz-hNu"/>
@@ -39,16 +39,53 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWX-ov-oOZ">
+                                <rect key="frame" x="16" y="101" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Episode #:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avf-fd-poH">
+                                <rect key="frame" x="16" y="202" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Season:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqY-CQ-iMG">
+                                <rect key="frame" x="16" y="152" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ4-Zi-MYr">
+                                <rect key="frame" x="51" y="324" width="272" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
+                                <state key="normal" title="PickaView">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.14625092907466097" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickaViewAction:" destination="PSd-Qv-z1B" eventType="touchUpInside" id="nHB-t9-KK1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1042688712477684" green="0.14825424551963806" blue="0.19401615858078003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="WYb-46-rsa">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="qiy-vP-T1D"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="episodeLabel" destination="Avf-fd-poH" id="s4t-Rk-Kvm"/>
+                        <outlet property="seasonLabel" destination="mqY-CQ-iMG" id="CHM-fk-QDu"/>
+                        <outlet property="showLabel" destination="rWX-ov-oOZ" id="f6d-ky-cZ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8g-Cq-KCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071" y="63"/>
+            <point key="canvasLocation" x="981.60000000000002" y="62.518740629685162"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -90,7 +127,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Action">
-                                    <color key="titleColor" red="0.73379784822463989" green="0.097798772156238556" blue="0.082022003829479218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.79922089244232697" green="0.10033659033573186" blue="0.085071320892080859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="QQ9-0L-33V" kind="show" id="Kz4-qJ-Jsy"/>
@@ -112,10 +149,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Comedy">
-                                    <color key="titleColor" red="0.87030512094497681" green="0.75044763088226318" blue="0.05891149491071701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.90407956822388835" green="0.77861958116946617" blue="0.059734000107034342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="zrR-Mk-e8A" kind="show" id="H4U-xO-7lj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puf-Vn-9gZ">
+                                <rect key="frame" x="239" y="265" width="118" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Trending">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oti-a8-boY" kind="show" id="ppY-xg-NYX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGF-H0-Lku">
@@ -125,14 +173,9 @@
                                 <state key="normal" title="Mystery">
                                     <color key="titleColor" red="0.97442644834518433" green="0.031035695225000381" blue="0.93651944398880005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puf-Vn-9gZ">
-                                <rect key="frame" x="241" y="261" width="118" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Trending">
-                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <connections>
+                                    <segue destination="9Yw-Ck-0nY" kind="show" id="LHs-YW-HO4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1042688712477684" green="0.14825424551963806" blue="0.19401615858078003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -154,12 +197,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3c-8P-1ZB">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="E3c-8P-1ZB">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
-                                    <color key="textColor" red="0.59815031290054321" green="0.53713130950927734" blue="0.14053159952163696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.90572494268417358" green="0.78203862905502319" blue="0.059503652155399323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Comedy" id="gai-kf-lEr">
@@ -180,6 +223,43 @@
             <point key="canvasLocation" x="62" y="736"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="Fjj-SU-cOk">
+            <objects>
+                <viewController id="oti-a8-boY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="86p-tD-dNI"/>
+                        <viewControllerLayoutGuide type="bottom" id="t3m-El-amW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gRr-mU-fWK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="dbS-6g-OZF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Trending" id="FX3-74-teD">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="7ME-DN-hEE">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="csR-TI-JPQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1042688712477684" green="0.14825424551963806" blue="0.19401615858078003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sf1-O3-gdy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="1406"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="2lD-49-5pu">
             <objects>
                 <viewController id="QQ9-0L-33V" sceneMemberID="viewController">
@@ -191,12 +271,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEt-J3-GUK">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="wEt-J3-GUK">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
-                                    <color key="textColor" red="0.62272852659225464" green="0.10568448156118393" blue="0.10911639779806137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.80119121074676514" green="0.10379046946763992" blue="0.089636646211147308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Action" id="PXy-eW-kdu">
@@ -214,7 +294,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AeH-7B-7z2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="753"/>
+            <point key="canvasLocation" x="1070" y="735"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="u6F-4s-GKj">
+            <objects>
+                <viewController id="9Yw-Ck-0nY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UwF-SO-W4A"/>
+                        <viewControllerLayoutGuide type="bottom" id="QiV-vr-X4z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rHZ-fz-NJy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-yL-Mbd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.78027224540710449" green="0.089541442692279816" blue="0.77009117603302002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Mystery " id="ivB-KN-qpg"/>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="BnP-eC-u13">
+                                <rect key="frame" x="10" y="30" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.78027224540710449" green="0.089541442692279816" blue="0.77009117603302002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Mystery" id="ZBf-ez-SRe">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="t7O-E1-AbP">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="DYX-v1-Nbf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1042688712477684" green="0.14825424551963806" blue="0.19401615858078003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ir-qy-Sba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060" y="734"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zp2-1h-Q1M">
@@ -228,7 +356,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIN-wC-s9x">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="aIN-wC-s9x">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textAttributes key="titleTextAttributes">
@@ -253,25 +381,8 @@
             </objects>
             <point key="canvasLocation" x="2060" y="63"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="EU1-o9-wvB">
-            <objects>
-                <viewController id="bUy-hc-Cte" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cCb-lV-4Zp"/>
-                        <viewControllerLayoutGuide type="bottom" id="wcu-mk-0es"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uQz-iN-TMj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3N4-Wv-Vii" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5ZG-k7-Jov"/>
+        <segue reference="DNN-7W-4ba"/>
     </inferredMetricsTieBreakers>
 </document>
